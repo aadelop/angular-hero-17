@@ -3,6 +3,7 @@ import {NgFor ,CommonModule} from '@angular/common';
 import {  Hero } from "../hero";
 import { FormsModule } from '@angular/forms';
 import {HEROES} from '../mock-heroes';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {HEROES} from '../mock-heroes';
   standalone: true,
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css',
-  imports: [CommonModule,FormsModule, NgFor]
+  imports: [CommonModule,FormsModule, NgFor,HeroDetailComponent]
 })
 export class HeroesComponent {
   selectedHero?: Hero;
