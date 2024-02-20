@@ -3,7 +3,6 @@ import {NgFor ,CommonModule} from '@angular/common';
 import {  Hero } from "../hero";
 import { FormsModule } from '@angular/forms';
 import { HeroService } from '../hero.service';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { MessageService } from '../message.service';
 import {RouterModule} from '@angular/router';
 
@@ -13,7 +12,7 @@ import {RouterModule} from '@angular/router';
   standalone: true,
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css',
-  imports: [CommonModule,FormsModule, NgFor,HeroDetailComponent, RouterModule]
+  imports: [CommonModule,FormsModule, NgFor, RouterModule]
 })
 
 
